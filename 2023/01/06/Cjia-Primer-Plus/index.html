@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="123title: Cjia Primer Plusdate: 2023-01-06 13:20:11tags:  一、进入C++1. C++语法1.1 C++区分大小写，文件扩展名一般是cpp12345678910111213程序2.1#include&lt;iostream&gt;int main()&amp;#123;using namespace std;count &lt;&lt; &amp;quo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2023/01/06/Cjia-Primer-Plus/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="123title: Cjia Primer Plusdate: 2023-01-06 13:20:11tags:  一、进入C++1. C++语法1.1 C++区分大小写，文件扩展名一般是cpp12345678910111213程序2.1#include&lt;iostream&gt;int main()&amp;#123;using namespace std;count &lt;&lt; &amp;quo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\zhanyang\AppData\Roaming\Typora\typora-user-images\image-20230106141830682.png">
+<meta property="article:published_time" content="2023-01-06T05:20:11.428Z">
+<meta property="article:modified_time" content="2023-01-06T06:50:51.342Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\zhanyang\AppData\Roaming\Typora\typora-user-images\image-20230106141830682.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Hexo</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/posts/">Writing</a></li>
+         
+          <li><a href="/Search/">Search</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/zydbk">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2023/01/06/C-Primer-Plus/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2023/01/06/Cjia-Primer-Plus/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&text="><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&title="><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&is_video=false&description="><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=&body=Check out this article: http://example.com/2023/01/06/Cjia-Primer-Plus/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&title="><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&title="><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&title="><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&title="><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&name=&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%BF%9B%E5%85%A5C"><span class="toc-number">1.</span> <span class="toc-text">一、进入C++</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-C-%E8%AF%AD%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">1. C++语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-C-%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99%EF%BC%8C%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D%E4%B8%80%E8%88%AC%E6%98%AFcpp"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1 C++区分大小写，文件扩展名一般是cpp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-C-%E4%B9%9F%E8%83%BD%E4%BD%BF%E7%94%A8c%E8%AF%AD%E8%A8%80-printf-%E5%92%8Cscanf%E5%92%8C%E6%89%80%E6%9C%89%E6%A0%87%E5%87%86c%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA%E5%B7%A5%E5%85%B7%E3%80%82"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2 C++也能使用c语言 printf 和scanf和所有标准c输入和输出工具。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-main-%E5%87%BD%E6%95%B0"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.3 main()函数</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Hexo</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2023-01-06T05:20:11.428Z" itemprop="datePublished">2023-01-06</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <hr>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Cjia Primer Plus</span><br><span class="line">date: 2023-01-06 13:20:11</span><br><span class="line">tags:</span><br></pre></td></tr></table></figure>
+
+<h1 id="一、进入C"><a href="#一、进入C" class="headerlink" title="一、进入C++"></a>一、进入C++</h1><h2 id="1-C-语法"><a href="#1-C-语法" class="headerlink" title="1. C++语法"></a>1. C++语法</h2><h3 id="1-1-C-区分大小写，文件扩展名一般是cpp"><a href="#1-1-C-区分大小写，文件扩展名一般是cpp" class="headerlink" title="1.1 C++区分大小写，文件扩展名一般是cpp"></a>1.1 C++区分大小写，文件扩展名一般是cpp</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">程序<span class="number">2.1</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line">count &lt;&lt; <span class="string">&quot;Come up and C++ me some time.&quot;</span>;</span><br><span class="line">count &lt;&lt; endl;</span><br><span class="line">count &lt;&lt; <span class="string">&quot;You won&#x27;t regret it!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">运行结果：</span><br><span class="line">Come up <span class="keyword">and</span> C++ me some time.</span><br><span class="line">You won<span class="number">&#x27;</span>t regret it!</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-C-也能使用c语言-printf-和scanf和所有标准c输入和输出工具。"><a href="#1-2-C-也能使用c语言-printf-和scanf和所有标准c输入和输出工具。" class="headerlink" title="1.2 C++也能使用c语言 printf 和scanf和所有标准c输入和输出工具。"></a>1.2 C++也能使用c语言 printf 和scanf和所有标准c输入和输出工具。</h3><h3 id="1-3-main-函数"><a href="#1-3-main-函数" class="headerlink" title="1.3 main()函数"></a>1.3 main()函数</h3><p>去掉修饰后，程序2.1的实例程序的基本结构如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	statements</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这几行表明一个名为main()的函数，并描述该函数的行为。这几行代码构成了函数定义(function definition)。该定义由两部分组成：第一行int main（）叫函数头（function heading），花括号（{和}）中包括的部分叫函数体。函数头对函数与程序其他部分之间的借口进行了总结，函数体是指出函数应做什么的计算机指令。在C++中，没条完整的指令都称为语句。所有的语句都一分号结束，因此在输入示例代码时，请不要省略分号</p>
+<p><img src="C:\Users\zhanyang\AppData\Roaming\Typora\typora-user-images\image-20230106141830682.png" alt="image-20230106141830682"></p>
+<p>C++句法要求main（）函数的定义以函数头int main（）开始。</p>
+<p>在c语言中，省略返回类型相当于说函数的类型为int，然而，C++逐步淘汰了这种用法。也可以使用以下变体：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">void</span>)</span></span></span><br></pre></td></tr></table></figure>
+
+<p>在括号中使用关键字void明确地指出，函数不接受任何参数。在C++（不是C）中，让括号空着与在括号中使用void等效（在C中，让括号空着意味着对是否接受参数保持沉默）。有些程序员使用下面的函数头，并省略返回语句：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">void main()</span><br></pre></td></tr></table></figure>
+
+<p>这在逻辑上是一致的，因为void返回类型意味着函数不返回任何值。该变体适用于很多系统，但由于它不是当前标准强制的一个选项，因此在有些系统上不能工作。因此，读者应避免使用这种格式，而应使用C++标准格式，这不需要做太多的工作就能完成。</p>
+<p>最后，ANSI&#x2F;ISO C++标准对那些抱怨必须在main( )函数最后包含一条返回语句过于繁琐的人做出了让步。如果编译器到达main( )函数末尾时没有遇到返回语句，则认为main( )函数以如下语句结尾：[插图]这条隐含的返回语句只适用于main( )函数，而不适用于其他函数。</p>
+<p>1.4 为什么main( )不能使用其他名称之所以将myfirst.cpp程序中的函数命名为main( )，原因是必须这样做。通常，C++程序必须包含一个名为main( )的函数（不是Main( )、MAIN( )或mane( )。记住，大小写和拼写都要正确）。由于myfirst.cpp程序只有一个函数，因此该函数必须担负起main( )的责任。在运行C++程序时，通常从main( )函数开始执行。因此，如果没有main( )，程序将不完整，编译器将指出未定义main( )函数。</p>
+<p>存在一些例外情况。例如，在Windows编程中，可以编写一个动态链接库（DLL）模块，这是其他Windows程序可以使用的代码。由于DLL模块不是独立的程序，因此不需要main( )。用于专用环境的程序—如机器人中的控制器芯片—可能不需要main( )。有些编程环境提供一个框架程序，该程序调用一些非标准函数，如_tmain( )。在这种情况下，有一个隐藏的main( )，它调用_tmain( )。但常规的独立程序都需要main( )，本书讨论的都是这种程序。</p>
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/posts/">Writing</a></li>
+         
+          <li><a href="/Search/">Search</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/zydbk">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%BF%9B%E5%85%A5C"><span class="toc-number">1.</span> <span class="toc-text">一、进入C++</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-C-%E8%AF%AD%E6%B3%95"><span class="toc-number">1.1.</span> <span class="toc-text">1. C++语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-C-%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99%EF%BC%8C%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D%E4%B8%80%E8%88%AC%E6%98%AFcpp"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1 C++区分大小写，文件扩展名一般是cpp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-C-%E4%B9%9F%E8%83%BD%E4%BD%BF%E7%94%A8c%E8%AF%AD%E8%A8%80-printf-%E5%92%8Cscanf%E5%92%8C%E6%89%80%E6%9C%89%E6%A0%87%E5%87%86c%E8%BE%93%E5%85%A5%E5%92%8C%E8%BE%93%E5%87%BA%E5%B7%A5%E5%85%B7%E3%80%82"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2 C++也能使用c语言 printf 和scanf和所有标准c输入和输出工具。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-main-%E5%87%BD%E6%95%B0"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.3 main()函数</span></a></li></ol></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2023/01/06/Cjia-Primer-Plus/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&text="><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&title="><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&is_video=false&description="><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=&body=Check out this article: http://example.com/2023/01/06/Cjia-Primer-Plus/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&title="><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&title="><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&title="><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&title="><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2023/01/06/Cjia-Primer-Plus/&name=&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2023 John Doe
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/posts/">Writing</a></li>
+         
+          <li><a href="/Search/">Search</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/zydbk">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-37473492-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
