@@ -56,7 +56,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-python可视化"
+  id="post-完整版"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -65,15 +65,15 @@
   <div class="article-inner">
      
     <div class="article-meta">
-      <a href="/2023/06/06/python%E5%8F%AF%E8%A7%86%E5%8C%96/" class="article-date">
-  <time datetime="2023-06-06T07:37:40.943Z" itemprop="datePublished">2023-06-06</time>
+      <a href="/2023/06/06/%E5%AE%8C%E6%95%B4%E7%89%88/" class="article-date">
+  <time datetime="2023-06-06T09:21:50.262Z" itemprop="datePublished">2023-06-06</time>
 </a>   
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">401</span>
+            <span class="post-count">307</span>
         </span>
     </span>
 
@@ -89,30 +89,14 @@
  
     </div>
       
-    <div class="tocbot"></div>
-
 
 
 
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h1><p>  numpy库是是用python进行数值计算、矩阵运算、数据处理、数据分析的常用库，也是进一步学习pandas库的基础，既然是去对数据进行处理，我把numpy对数据的操作归纳为四个部分来进行介绍，分别是1.创建数据容器 2.操作容器 3.读取与修改数据4.操作数据 </p>
-<h2 id="创建初始化数组"><a href="#创建初始化数组" class="headerlink" title="创建初始化数组"></a>创建初始化数组</h2><p>np.zeros()创建一个全为0的数组</p>
-<p>np.ones()创建一个全为1的数组</p>
-<p>np.eye()创建一个对称轴为1的数组</p>
-<p>np.empty()创建一个随机的数组</p>
-<p>np.full（）创建一个元素一样的数组</p>
-<h2 id="reshape"><a href="#reshape" class="headerlink" title="reshape():"></a>reshape():</h2><ul>
-<li>reshape(nx,ny): 将数据重组成nx行，ny列的数据。</li>
-<li>reshape(-1,ny): 将数据重组成ny列的数据，行数自动计算、自动调整。</li>
-<li>reshape(nx,-1): 将数据重组成nx行的数据，列数自动计算、自动调整</li>
-</ul>
-<h2 id="运用np-random来创建随机数数组"><a href="#运用np-random来创建随机数数组" class="headerlink" title="运用np.random来创建随机数数组"></a>运用np.random来创建随机数数组</h2><p>1.np.random.rand(),根据传入形状参数创建元素为来自[0,1)的随机数的数组</p>
-<p>2.np.random.randn(),根据传入形状参数创建元素为满足标准正态分布的数组</p>
-<p>3.np.random.random(),根据传入形状参数创建元素为来自[0,1)的随机数的数组</p>
-<p>4.np.random.randint(),根据传入的取值范围和形状参数创建元素为来自范围内的随机整数的数组</p>
-<p>5.np.random.normal(),根据传入的数学期望、方差和形状参数来创建元素满足对应正态分布的数组</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import pandas as pd</span><br><span class="line">from sklearn.preprocessing import OrdinalEncoder</span><br><span class="line">from sklearn.model_selection import train_test_split</span><br><span class="line">from sklearn.neighbors import KNeighborsClassifier</span><br><span class="line">from sklearn.preprocessing import MinMaxScaler, StandardScaler</span><br><span class="line">from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from sklearn.naive_bayes import GaussianNB</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def get_data(file_path):</span><br><span class="line">    data = pd.read_csv(file_path)</span><br><span class="line">    return data</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def split_x_y(data):</span><br><span class="line">    x = data.drop(&quot;Index&quot;, axis=1)</span><br><span class="line">    y = data.iloc[:, -1]</span><br><span class="line">    return x, y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def ordinal_data(x):</span><br><span class="line">    ordinal = OrdinalEncoder()</span><br><span class="line">    ordinal.fit(x)</span><br><span class="line">    new_data = ordinal.transform(x)</span><br><span class="line">    return new_data</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def split_train_test(x, y):</span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(x, y, train_size=0.8, random_state=9870)</span><br><span class="line">    return x_train, x_test, y_train, y_test</span><br><span class="line"></span><br><span class="line">#归一化是特征值而不是目标值</span><br><span class="line">#x_train 训练集的特征值, x_test训练集的目标值, y_train测试集的特征值, y_test测试集的目标值</span><br><span class="line">def Standar(x_train, x_test):</span><br><span class="line">    str = StandardScaler()</span><br><span class="line">    str.fit(x_train)</span><br><span class="line">    x_standar_train = str.transform(x_train)</span><br><span class="line">    x_standar_test = str.transform(x_test)</span><br><span class="line">    return x_standar_train, x_standar_test</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def knn_Neighbor(x_train, x_test, y_train, y_test):</span><br><span class="line">    neighbor = KNeighborsClassifier(n_neighbors=5)</span><br><span class="line">    neighbor.fit(x_train, y_train)</span><br><span class="line">    score = neighbor.score(x_test, y_test)</span><br><span class="line">    y_pre = neighbor.predict(x_test)</span><br><span class="line">    return score, y_pre</span><br><span class="line"></span><br><span class="line">def gaussianNB(x_train,x_test,y_tarin,y_test):</span><br><span class="line">    gaussian=GaussianNB()</span><br><span class="line">    gaussian.fit(x_train,y_tarin)</span><br><span class="line">    y_pre=gaussian.predict(x_test)</span><br><span class="line">    score=gaussian.score(x_test,y_test)</span><br><span class="line">    return score,y_pre</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def Display(y_pre, y_test):</span><br><span class="line">    matrix = confusion_matrix(y_pre, y_test)</span><br><span class="line">    disp = ConfusionMatrixDisplay(matrix)</span><br><span class="line">    disp.plot()</span><br><span class="line">    plt.show()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    data = get_data(&quot;Gender_Height_Weight_Index.csv&quot;)</span><br><span class="line">    x, y = split_x_y(data)</span><br><span class="line">    x[&quot;Gender&quot;] = ordinal_data(np.array(x[&quot;Gender&quot;]).reshape(-1, 1)).astype(&quot;int64&quot;)</span><br><span class="line">    x_train, x_test, y_train, y_test = split_train_test(x, y)</span><br><span class="line">    x_standar_train, x_standar_test = Standar(x_train, x_test)</span><br><span class="line">    score, y_pre = knn_Neighbor(x_standar_train, x_standar_test, y_train, y_test)</span><br><span class="line">    print(f&quot;knn的结果:&#123;score&#125;&quot;)</span><br><span class="line">    Display(y_pre, y_test)</span><br><span class="line">    score, y_pre=gaussianNB(x_train, x_test, y_train, y_test)</span><br><span class="line">    print(f&quot;贝叶斯的结果:&#123;score&#125;&quot;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
  
       <!-- reward -->
       
@@ -183,7 +167,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/06/06/python%E5%8F%AF%E8%A7%86%E5%8C%96/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/06/06/%E5%AE%8C%E6%95%B4%E7%89%88/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -194,17 +178,8 @@
    
   <nav class="article-nav">
     
-      <a href="/2023/06/06/%E5%AE%8C%E6%95%B4%E7%89%88/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            (no title)
-          
-        </div>
-      </a>
     
-    
-      <a href="/2023/06/06/%E4%BB%A3%E7%A0%81%20/" class="article-nav-link">
+      <a href="/2023/06/06/python%E5%8F%AF%E8%A7%86%E5%8C%96/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
         <div class="article-nav-title"></div>
       </a>
