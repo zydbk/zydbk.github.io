@@ -157,6 +157,55 @@
     
     
     <article
+  id="post-期末1"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/06/19/%E6%9C%9F%E6%9C%AB1/"
+    >期末1</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/06/19/%E6%9C%9F%E6%9C%AB1/" class="article-date">
+  <time datetime="2023-06-19T06:32:01.000Z" itemprop="datePublished">2023-06-19</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import pandas as pd</span><br><span class="line">from sklearn.model_selection import train_test_split, GridSearchCV</span><br><span class="line">from sklearn.linear_model import LogisticRegression</span><br><span class="line">from sklearn.preprocessing import OrdinalEncoder, MinMaxScaler, StandardScaler</span><br><span class="line">import pprint</span><br><span class="line">from sklearn.impute import SimpleImputer</span><br><span class="line">from sklearn.neighbors import KNeighborsClassifier</span><br><span class="line">from sklearn.naive_bayes import GaussianNB</span><br><span class="line">from sklearn.tree import DecisionTreeClassifier</span><br><span class="line">from sklearn.ensemble import RandomForestClassifier</span><br><span class="line">def get_data(file_path):</span><br><span class="line">    data = pd.read_csv(file_path, sep=&quot;;&quot;)</span><br><span class="line">    data_no = data[data[&quot;y&quot;] == &quot;no&quot;]</span><br><span class="line">    data_yes = data[data[&quot;y&quot;] == &quot;yes&quot;]</span><br><span class="line">    data_yes = data_yes.sample(39922, random_state=2000, replace=True)</span><br><span class="line">    new_data = pd.concat([data_yes, data_no], axis=0)</span><br><span class="line">    return new_data</span><br><span class="line">def preprocess_data(data):</span><br><span class="line">    cols = data.columns</span><br><span class="line">    cols_dict = &#123;&#125;</span><br><span class="line">    for col in cols:</span><br><span class="line">        cols_dict[col] = data[col][data[col] == &quot;unknown&quot;].count()</span><br><span class="line">    imputer = SimpleImputer(missing_values=&quot;unknown&quot;, strategy=&quot;most_frequent&quot;)</span><br><span class="line">    for col in cols:</span><br><span class="line">        if data[col].dtype == &quot;object&quot; and col != &quot;poutcome&quot;:</span><br><span class="line">            data.loc[:, col] = imputer.fit_transform(data[col].values.reshape(-1, 1))</span><br><span class="line">    return data</span><br><span class="line">def Ordinal_data(data):</span><br><span class="line">    cols = data.columns</span><br><span class="line">    ordinal = OrdinalEncoder()</span><br><span class="line">    for col in cols:</span><br><span class="line">        if data[col].dtype == &quot;object&quot;:</span><br><span class="line">            data[col] = np.array(ordinal.fit_transform(data[col].values.reshape(-1, 1))).flatten().astype(&quot;int64&quot;)</span><br><span class="line">    return data</span><br><span class="line">def split_x_y(data):</span><br><span class="line">    x, y = data.drop(&quot;y&quot;, axis=1), data.iloc[:, -1]</span><br><span class="line">    return x, y</span><br><span class="line">def split_train_test(x, y):</span><br><span class="line">    x_train, x_test, y_train, y_test = train_test_split(x, y, train_size=0.8, random_state=9870)</span><br><span class="line">    return x_train, x_test, y_train, y_test</span><br><span class="line">def Logistic_model(x_train, x_test, y_train, y_test):</span><br><span class="line">    logistic = LogisticRegression(C=0.63, solver=&#x27;liblinear&#x27;, penalty=&#x27;l1&#x27;, max_iter=30)</span><br><span class="line">    logistic.fit(x_train, y_train)</span><br><span class="line">    score = logistic.score(x_test, y_test)</span><br><span class="line">    return score</span><br><span class="line"># 特征化处理</span><br><span class="line">def Standar_x(x_train, x_test):</span><br><span class="line">    sta = StandardScaler()</span><br><span class="line">    sta.fit(x_train)</span><br><span class="line">    x_str_train, x_str_test = sta.transform(x_train), sta.transform(x_test)</span><br><span class="line">    return x_str_train, x_str_test</span><br><span class="line"># KNN</span><br><span class="line">def Neighbor_Model(x_str_train, x_str_test, y_train, y_test):</span><br><span class="line">    ngr = KNeighborsClassifier(n_neighbors=5)</span><br><span class="line">    ngr.fit(x_str_train, y_train)</span><br><span class="line">    score = ngr.score(x_str_test, y_test)</span><br><span class="line">    return score</span><br><span class="line"># 贝叶斯</span><br><span class="line">def Gaussian_Model(x_train, x_test, y_train, y_test):</span><br><span class="line">    gau = GaussianNB()</span><br><span class="line">    gau.fit(x_train, y_train)</span><br><span class="line">    score = gau.score(x_test, y_test)</span><br><span class="line">    return score</span><br><span class="line"># 决策树</span><br><span class="line">def Decision_Model(x_train, x_test, y_train, y_test):</span><br><span class="line">    dec = DecisionTreeClassifier(criterion=&quot;entropy&quot;)</span><br><span class="line">    dec.fit(x_train, y_train)</span><br><span class="line">    score = dec.score(x_test, y_test)</span><br><span class="line">    return score</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 随机森林</span><br><span class="line">def Forest_Model(x_train, x_test, y_train, y_test):</span><br><span class="line">    forest = RandomForestClassifier(n_estimators=100)</span><br><span class="line">    forest.fit(x_train, y_train)</span><br><span class="line">    score = forest.score(x_test, y_test)</span><br><span class="line">    return score</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    new_data = get_data(&quot;../lab/bank-full.csv&quot;)</span><br><span class="line">    data = preprocess_data(new_data)</span><br><span class="line">    data = Ordinal_data(data)</span><br><span class="line">    x, y = split_x_y(data)</span><br><span class="line">    x_train, x_test, y_train, y_test = split_train_test(x, y)</span><br><span class="line">    score = Logistic_model(x_train, x_test, y_train, y_test)</span><br><span class="line">    print(f&quot;线性回归的预测结果率:&#123;score&#125;&quot;)</span><br><span class="line">    x_str_train, x_str_test = Standar_x(x_train, x_test)</span><br><span class="line">    score = Neighbor_Model(x_str_train, x_str_test, y_train, y_test)</span><br><span class="line">    print(f&quot;KNN算法的预测结果率:&#123;score&#125;&quot;)</span><br><span class="line">    score = Gaussian_Model(x_train, x_test, y_train, y_test)</span><br><span class="line">    print(f&quot;高斯贝叶斯的预测结果率:&#123;score&#125;&quot;)</span><br><span class="line">    score = Decision_Model(x_train, x_test, y_train, y_test)</span><br><span class="line">    print(f&quot;决策树的测试结果率:&#123;score&#125;&quot;)</span><br><span class="line">    score = Forest_Model(x_train, x_test, y_train, y_test)</span><br><span class="line">    print(f&quot;随机森林的测试结果率:&#123;score&#125;&quot;)</span><br></pre></td></tr></table></figure>
+
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+   
+   
+  
+</article>
+
+    
+    <article
   id="post-期末"
   class="article article-type-post"
   itemscope
